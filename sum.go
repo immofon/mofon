@@ -6,5 +6,5 @@ import (
 )
 
 func SHA256(data string) string {
-	return fmt.Sprint(sha256.Sum256([]byte(data)))
+	return fmt.Sprintf("%x", sha256.Sum256([]byte(data)))
 }
